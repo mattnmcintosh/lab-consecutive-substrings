@@ -1,2 +1,8 @@
-Please add your pseudocode to this file
-And a written explanation of your solution
+set an array to collect the substrings
+for (i from 0 to length of string, exclusive)
+    for (j from i + 1 to length of string, inclusive)
+        take the substring from index i up to (not including) index j
+        add that substring to the array
+return the array
+
+this requires n^2 because of the inner loop, there is an additional cost in the .slice() boosting it to n^3 doing another string but since i need to return the text rather than the indices that's unavoidable to my knowledge right now for this specific problem
